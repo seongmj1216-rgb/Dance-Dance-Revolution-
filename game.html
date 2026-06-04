@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -675,6 +675,51 @@
             100% {
                 transform: scale(1);
             }
+        }
+
+        #game-description-box {
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px dashed rgba(0, 234, 255, 0.35);
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin-top: 8px;
+            font-size: 8.5px;
+            color: #ccc;
+            line-height: 1.55;
+            letter-spacing: 0.5px;
+            box-shadow: 0 0 10px rgba(0, 234, 255, 0.05), inset 0 0 10px rgba(0, 234, 255, 0.05);
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        #game-description-box:hover {
+            border-color: rgba(0, 234, 255, 0.7);
+            box-shadow: 0 0 15px rgba(0, 234, 255, 0.15), inset 0 0 15px rgba(0, 234, 255, 0.08);
+            color: #fff;
+        }
+
+        #game-description-box h4 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 7.5px;
+            color: #00eaff;
+            margin-bottom: 8px;
+            text-shadow: 0 0 5px rgba(0, 234, 255, 0.5);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        #game-description-box .desc-item {
+            margin-bottom: 6px;
+        }
+
+        #game-description-box .desc-item:last-child {
+            margin-bottom: 0;
+        }
+
+        #game-description-box .desc-item strong {
+            color: #ff2d78;
+            text-shadow: 0 0 4px rgba(255, 45, 120, 0.3);
+            font-weight: 500;
         }
 
         #btn-wrap {
@@ -3740,6 +3785,17 @@
                             <div id="song-select-wrap">
                                 <div class="song-title-label">SELECT MUSIC</div>
                                 <div id="song-list"></div>
+                            </div>
+                            <div id="game-description-box">
+                                <h4>ABOUT THIS GAME</h4>
+                                <div class="desc-item"><strong>1. 무엇을 만들었는가:</strong> 화려한 네온 비주얼과 칩튠 음악이 어우러진 레트로 오락실
+                                    스타일의 5키 리듬 게임입니다.</div>
+                                <div class="desc-item"><strong>2. 어떻게 플레이하는가:</strong> 타이밍에 맞춰 키보드(방향키 및 SPACE)로 노트를 맞추며
+                                    콤보를 쌓고, 방해 노트(💀, 🤡)를 피해 높은 점수를 기록합니다.</div>
+                                <div class="desc-item"><strong>3. 기획 배경과 감정:</strong> 과거에 마음껏 즐겨보지 못했던 DDR 게임을 내 손으로 직접
+                                    만들어보고 싶다는 순수한 아쉬움과 호기심에서 출발해, DDR을 웹에 고스란히 복원하여 즐거운 재미를 나누고 싶었습니다.</div>
+                                <div class="desc-item"><strong>4. AI 에이전트 협업:</strong> 물리 엔진 최적화, 정교한 판정 및 콤보 시스템 설계,
+                                    세밀한 CSS 디자인 구성 등 전 개발 과정에서 AI 에이전트(Antigravity)와 긴밀히 협력해 완성했습니다.</div>
                             </div>
                             <div id="btn-wrap"
                                 style="margin-top: 12px; display: flex; justify-content: flex-end; gap: 12px;">
